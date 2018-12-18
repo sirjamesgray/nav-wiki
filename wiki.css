@@ -35,17 +35,6 @@ h2 {
     display: none !important;
 }
 
-#left-navigation,#p-views {
- display: none;
-}
-
-#p-personal,#siteSub {
- display: none;
-}
-
-#mp-topbanner,#mp-upper,#mp-lower {
-    display: none;
-}
 
 #right-navigation {
  margin-top: 1em;
@@ -62,7 +51,7 @@ h2 {
     left: 0px;
     top: 0px;
     z-index: 9999;
-    width: 260px;
+    width: 216px;
 }
 
 .viewport {
@@ -94,8 +83,21 @@ h2 {
 }
 
 html body .mw-body {
-    padding-left: 4em !important;
+    padding-left: 2em !important;
     margin-left: 240px;
+}
+
+/* unhiding the side panel in hopes of adding it 
+to the bottom of the left sidebar */
+
+/* #mw-panel {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+} */
+
+#mw-panel {
+    position: relative !important;
 }
 
 #split-bar {
@@ -106,4 +108,9 @@ html body .mw-body {
     width: 6px;
     top: 0px;
     cursor: col-resize;
+}
+
+#left-navigation {
+    margin-left: 240px;
+    padding-left: 4em !important;
 }
